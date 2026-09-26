@@ -29,3 +29,17 @@ body {
     line-height: 1.5;           /* Altura de línea para mejor lectura */
     font-size: 0.95rem;
 }
+
+/* Contenedor principal donde están los inputs */
+.container {
+    max-width: 900px;
+    margin: 30px auto;          /* Centra horizontalmente el formulario */
+    padding: 0 20px;
+}
+
+.input-label {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #222222;
+}
