@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validador de correro electrónico</title>
-    <link rel = "stylesheet" href  = "styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ipsum ea excepturi esse ratione, sint quia pariatur doloribus deserunt dolore iure delectus iste, inventore autem adipisci eaque exercitationem possimus maxime?
-    </p>
+    <header class="header">
+        <h1>Validador de correo electrónico</h1>
+        <p>
+            Esta herramienta verificara la validez de una dirección de correo electrónico.
+        </p>
+
+    </header>
+    <main class="container">
+        <label class="input-label">Dirección de correo electrónico de entrada</label>
+
+        <div class="field-row">
+            <input
+                type="email"
+                id="emailInput"
+                placeholder="Enter email addres here"
+            >
+            <button type="button" id="clearBtn" class="btn-secondary">Borrar</button>
+        </div>
+
+        <div class="captcha-row">
+            <div class="captcha-box">
+                <canvas id="captchaCanvas" width="130" height="38"></canvas>
+                <button type="button" id="refreshCaptchaBtn" title="Cambiar captcha">🔄</button>
+            </div>
+
+            <input
+                type="text"
+                id="captchaInput"
+                placeholder="Enter characters here"
+            >
+        </div>
+
+        <button type="button" id="validateBtn" class="btn-primary">Validar</button>
+
+        <div id="resultBox" class="result-box hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
