@@ -1,11 +1,31 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: #f8f9fa;
-  color: #333333;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+.header {
+  background-color: #111d2e; /* El azul oscuro de la imagen */
+  color: #ffffff;             /* Texto blanco */
+  text-align: center;         /* Centra el texto */
+  padding: 40px 20px;         /* Espaciado interno: 40px arriba/abajo, 20px a los lados */
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.header p {
+    max-width: 800px;
+    margin: 0 auto;             /* Centra el contenedor del párrafo */
+    line-height: 1.5;           /* Altura de línea para mejor lectura */
+    font-size: 0.95rem;
 }
