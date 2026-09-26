@@ -43,3 +43,96 @@ body {
     margin-bottom: 8px;
     color: #222222;
 }
+
+/* Fila que contiene el input del correo y el botón borrar */
+.field-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.field-row input[type="email"] {
+    flex: 1;                    /* Hace que el campo ocupe todo el espacio disponible */
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 0.95rem;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    border: 1px solid #111d2e;
+    color: #111d2e;
+    padding: 10px 24px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    border-radius: 2px;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f4f8;
+}
+
+/* Fila del CAPTCHA y la caja donde se ingresa */
+.captcha-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.captcha-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* El lienzo (<canvas>) donde dibujaremos el captcha */
+#captchaCanvas {
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+#refreshCaptchaBtn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.captcha-row input[type="text"] {
+    width: 200px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 0.95rem;
+}
+
+/* Botón principal Validar */
+.btn-primary {
+    background-color: #111d2e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn-primary:hover {
+    background-color: #1b2e4a;
+}
+
+/* Caja para mostrar la respuesta del análisis */
+.result-box {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Clase utilidad para ocultar elementos temporalmente */
+.hidden {
+    display: none;
+}
